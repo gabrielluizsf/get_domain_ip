@@ -1,0 +1,4 @@
+github.com/theGOURL/Constructor v0.0.0-20230303170402-871291205b1f h1:Qe3UfWckRWt2KRAtD176BCa10hnXHC6TLpgNE3TYy64=
+github.com/theGOURL/Constructor v0.0.0-20230303170402-871291205b1f/go.mod h1:StoqV93tyaAplKV1PFTPgEFWe/58WEAFtj9wpoiraQs=
+github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 h1:bAn7/zixMGCfxrRTfdpNzjtPYqr8smhKouy9mxVdGPU=
+github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673/go.mod h1:N3UwUGtsrSj3ccvlPHLoLsHnpR27oXr4ZE984MbSER8=
