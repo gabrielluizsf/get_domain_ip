@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"github.com/gabrielluizsf/get_domain_ip/cli"
 	"os"
 )

@@ -2,26 +2,25 @@ package cli
 
 import (
 	"fmt"
-	"log"
 	"net"
 
-	"github.com/theGOURL/Constructor"
+	"github.com/urfave/cli"
 )
 
 // Generate will return the command line application ready to run
-func Generate() *Constructor.App {
-	app := Constructor.NewApp()
+func Generate() *cli.App {
+	app := cli.NewApp()
 	app.Name = "command line application"
 	app.Usage = "search IP's and server names on the internet"
 
-	flags := []Constructor.Flag{
-		Constructor.StringFlag{
+	flags := []cli.Flag{
+		cli.StringFlag{
 			Name:  "host",
 			Value: "devbook.com.br",
 		},
 	}
 
-	app.Commands = []Constructor.Command{
+	app.Commands = []cli.Command{
 		{
 			Name:   "ip",
 			Usage:  "internet address IP search",
@@ -39,7 +38,7 @@ func Generate() *Constructor.App {
 	return app
 }
 
-func searchIps(c *Constructor.Context) {
+func searchIps(c *cli.Context) {
 	host := c.String("host")
 
 	ips, err := net.LookupIP(host)
@@ -50,7 +49,7 @@ func searchIps(c *Constructor.Context) {
 	}
 }
 
-func searchServers(c *Constructor.Context) {
+func searchServers(c *cli.Context) {
 	host := c.String("host");
 
 	servers, err := net.LookupNS(host)
